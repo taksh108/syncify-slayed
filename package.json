@@ -1,24 +1,24 @@
 {
-	"name": "your-shopify-store-theme",
+	"name": "hemp-house-development-store-theme",
 	"author": {
-		"name": "Foo Bar",
-		"email": "foo@example.com",
-		"url": "https://example.com"
+		"name": "Taksh Shah",
+		"email": "hello@taksh.codes",
+		"url": "https://hemp-house-development-store.myshopify.com"
 	},
 	"version": "0.0.0",
 	"description": "Theme Description",
-	"homepage": "https://your-shopify-store.com",
+	"homepage": "https://hemp-house-development-store.myshopify.com",
 	"scripts": {
-		"dev": "syncify your-shopify-store --theme dev --watch --hot",
-		"build": "syncify --build --prod --clean",
-		"upload": "syncify your-shopify-store --theme dev --upload",
-		"download": "syncify your-shopify-store --theme dev --download"
+		"dev": "syncify hemp-house-development-store --theme dev --watch --hot",
+		"build": "syncify --build --clean",
+		"upload": "syncify hemp-house-development-store --theme dev --upload",
+		"download": "syncify hemp-house-development-store --theme dev --download"
 	},
 	"syncify": {
 		"stores": {
-			"domain": "your-shopify-store",
+			"domain": "hemp-house-development-store",
 			"themes": {
-				"dev": 1234567890
+				"dev": 172875219223
 			}
 		},
 		"clean": true,
@@ -51,9 +51,6 @@
 				}
 			},
 			"transform": {
-				"script": {
-					"assets/[file]": "assets/*.js"
-				},
 				"style": {
 					"assets/[file]": "assets/*.css"
 				},
@@ -70,6 +67,7 @@
 	},
 	"devDependencies": {
 		"@syncify/cli": "github:panoply/syncify",
-		"svgo": "^3.3.2"
+		"svgo": "^3.3.2",
+		"syncify#next": "link:@panoply/syncify#next"
 	}
 }

@@ -14,6 +14,9 @@ importers:
       svgo:
         specifier: ^3.3.2
         version: 3.3.2
+      syncify#next:
+        specifier: link:@panoply/syncify#next
+        version: link:@panoply/syncify#next
 
 packages:
 
