@@ -51,8 +51,24 @@
 				}
 			},
 			"transform": {
+				"script": {
+					"assets/[file]": {
+						"input": [
+							"assets/*.js",
+							"src/*/*.js"
+						],
+						"esbuild": true,
+						"sourcemap": true
+					}
+				},
 				"style": {
-					"assets/[file]": "assets/*.css"
+					"assets/[file]": {
+						"input": [
+							"assets/*.css",
+							"src/*/*.css"
+						],
+						"tailwind": true
+					}
 				},
 				"svg": {
 					"assets/[file]": {
@@ -66,8 +82,16 @@
 		}
 	},
 	"devDependencies": {
-		"@syncify/cli": "github:panoply/syncify",
+		"@syncify/cli": "github:panoply/syncify#v0.0.1.rc1",
 		"svgo": "^3.3.2",
-		"syncify#next": "link:@panoply/syncify#next"
+		"syncify#v0.0.1.rc1": "link:@panoply/syncify#v0.0.1.rc1",
+		"tailwindcss": "^3.4.15"
+	},
+	"dependencies": {
+		"@alpinejs/collapse": "^3.14.3",
+		"@alpinejs/focus": "^3.14.3",
+		"@alpinejs/morph": "^3.14.3",
+		"alpinejs": "^3.14.3",
+		"liquid-ajax-cart": "^2.1.1"
 	}
 }
